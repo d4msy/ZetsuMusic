@@ -1,5 +1,5 @@
 # Credits @Tonic880
-# Recode @mahadappa
+# Recode @mahadappa @xflsdam
 
 name : Indonesia
 
@@ -47,7 +47,7 @@ admin_5 : "Musik sudah dimatikan."
 admin_6 : "🎧 Obrolan Suara Dibisukan oleh {}!"
 admin_7 : "Musik sudah disuarakan."
 admin_8 : "🎧 Obrolan Suara Disuarakan oleh {}!"
-admin_9 : "🎧 Obrolan Suara Diakhiri/Dihentikan oleh {}!"
+admin_9 : "🎧 Obrolan Suara Diakhiri oleh {}!"
 admin_10 : "🎧 Obrolan Suara Dilewati oleh {}!. Tidak Ada Lagi Musik di Antrian."
 admin_11 : "Error saat mengubah aliran ke **{0}**\n\nSilakan gunakan /skip lagi."
 admin_12 : "Tidak dapat melompat ke trek tertentu karena pemutaran loop diaktifkan. Harap nonaktifkan pemutaran loop melalui `/loop disable` untuk menggunakan fitur ini."
@@ -80,8 +80,8 @@ admin_34 : "Gagal mencari seek saat ini."
 start_1 : "Terima kasih telah menerima saya di {0}.\n{1} masih hidup.\n\nUntuk bantuan atau bantuan apa pun, periksa grup dan saluran dukungan kami."
 start_2 : "Halo, Nama saya {0}.\n\nSaya bot streaming telegram dengan beberapa fitur berguna. Platform pendukung seperti Youtube, Spotify, Resso, AppleMusic , Soundcloud dll.\n\nJangan ragu untuk menambahkan saya ke kelompokmu."
 start_3 : "Selamat datang di {0}\n\nSaya tidak memerlukan **izin admin** untuk bekerja (sampai diminta).\n\nNama Pengguna Asisten:- @{1}\nID Asisten:- {2} "
-start_4 : "Selamat datang Tuhanku {0} [{1}]."
-start_5 : "Selamat datang Tuhanku {0} [{1}]."
+start_4 : "Selamat datang Pemilikku {0} [{1}]."
+start_5 : "Selamat datang Pemilikku {0} [{1}]."
 start_6 : "❗️ **Diperlukan Supergrup** ️\n\nHarap ubah **grup** Anda menjadi **grup super** lalu tambahkan saya kembali.\n\n**Bagaimana cara membuat grup super?**\n✅ Jadikan riwayat obrolan grup Anda **terlihat** sekali."
 start_7 : "**Obrolan Daftar Hitam**\n\nObrolan Anda telah dimasukkan dalam daftar hitam oleh Bot. Silakan minta SudoUser untuk memasukkan obrolan ke daftar putih terlebih dahulu. Periksa [Sudolist dari sini]({0})"
 
@@ -257,7 +257,7 @@ S_B_5 : "✚ ᴛᴀʙᴀʜᴋᴀɴ sᴀʏᴀ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ"
 S_B_6 : "💾 ɢɪᴛ ʀᴇᴘᴏ"
 S_B_7 : "🧸 ᴘᴇᴍɪʟɪᴋ ʙᴏᴛ"
 S_B_8 : "🗂 ᴍᴇɴᴜ ᴘᴇʀɪɴᴛᴀʜ"
-S_B_9 : "✨ ᴄʜᴀɴɴᴇʟ"
+S_B_9 : "📣 ɢʀᴏᴜᴘ"
 
 #Membantu
 H_B_1 : "ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ"
