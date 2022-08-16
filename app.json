@@ -1,7 +1,7 @@
 {
-    "name": "ReyyYukki ",
+    "name": "ZetsuMusic",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/6d9c1f5e4acb05d24e784.jpg",
+    "logo": "https://telegra.ph/file/b7377dbb15379573b68dd.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -45,7 +45,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "851754691",
+        "value": "1883676087",
         "required": true
       },
       "STRING_SESSION": {
@@ -70,7 +70,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/ReyyNada/ReyyYukki",
+        "value": "https://github.com/damsyx/zetsumusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
