@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 
 from pyrogram import filters
@@ -148,16 +139,13 @@ async def start_comm(client, message: Message, _):
                 published = result["publishedTime"]
             searched_text = f"""
 🔍__**Video Track Information**__
-
 ❇️**Title:** {title}
-
 ⏳**Duration:** {duration} Mins
 👀**Views:** `{views}`
 ⏰**Published Time:** {published}
 🎥**Channel Name:** {channel}
 📎**Channel Link:** [Visit From Here]({channellink})
 🔗**Video Link:** [Link]({link})
-
 ⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
@@ -186,6 +174,39 @@ async def start_comm(client, message: Message, _):
                     config.LOG_GROUP_ID,
                     f"{message.from_user.mention} has just started bot to check <code>VIDEO INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
                 )
+    else:
+        try:
+            await app.resolve_peer(OWNER_ID[0])
+            OWNER = OWNER_ID[0]
+        except:
+            OWNER = None
+        out = private_panel(_, app.username, OWNER)
+        if config.START_IMG_URL:
+            try:
+                await message.reply_photo(
+                    photo=config.START_IMG_URL,
+                    caption=_["start_2"].format(
+                        config.MUSIC_BOT_NAME
+                    ),
+                    reply_markup=InlineKeyboardMarkup(out),
+                )
+            except:
+                await message.reply_text(
+                    _["start_2"].format(config.MUSIC_BOT_NAME),
+                    reply_markup=InlineKeyboardMarkup(out),
+                )
+        else:
+            await message.reply_text(
+                _["start_2"].format(config.MUSIC_BOT_NAME),
+                reply_markup=InlineKeyboardMarkup(out),
+            )
+        if await is_on_off(config.LOG):
+            sender_id = message.from_user.id
+            sender_name = message.from_user.first_name
+            return await app.send_message(
+                config.LOG_GROUP_ID,
+                f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+            )
 
 
 @app.on_message(
@@ -214,7 +235,7 @@ async def welcome(client, message: Message):
     if config.PRIVATE_BOT_MODE == str(True):
         if not await is_served_private_chat(message.chat.id):
             await message.reply_text(
-                "**Bot Musik Pribadi**\n\nHanya untuk obrolan resmi dari pemiliknya. Minta pemilik saya untuk mengizinkan obrolan Anda terlebih dahulu."
+                "**Private Music Bot**\n\nOnly for authorized chats from the owner. Ask my owner to allow your chat first."
             )
             return await app.leave_chat(message.chat.id)
     else:
