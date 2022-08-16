@@ -17,7 +17,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_3"],  switch_inline_query_current_chat=""
             ),
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"https://t.me/BdrlBukan",
+                text=_["S_B_9"], url=f"https://t.me/damprivateroom",
             ),
         ],
         [
@@ -136,7 +136,7 @@ def slider_markup(
         ],
         [
             InlineKeyboardButton(
-                text="＜-",
+                text="⬅️",
                 callback_data=f"slider B|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
@@ -144,7 +144,7 @@ def slider_markup(
                 callback_data=f"forceclose {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="-＞",
+                text="➡️",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
         ],
