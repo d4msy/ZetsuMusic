@@ -6,75 +6,75 @@
     "python3",
     "telegram",
     "bot",
-    "XYukki",
-    "ReyyXYukki",
+    "Zetsu",
+    "ZetsuMusic",
     "telegram-bot",
     "pyrogram"
     ],
     "stack": "container",
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Dapatkan ini dari https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Dapatkan ini dari https://my.telegram.org",
         "value": "",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "description": "Jika Anda ingin asisten Anda meninggalkan semua obrolan secara otomatis setelah beberapa waktu.",
         "value": "True",
         "required": false
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "Token Bot dari Botfather",
         "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
+        "description": "Dapatkan url mongodb dari https://cloud.mongodb.com . Anda dapat mengosongkannya jika Anda mau, bot akan menggunakan database Yukki untuk Anda.",
         "value": "",
         "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "description": "Nama untuk Bot Musik Anda. Tolong jangan gunakan karakter ascii",
         "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "description": "ID pengguna dari pengguna yang ingin Anda tambahkan sebagai PEMILIK. Beberapa nilai harus dipisahkan dengan spasi.",
         "value": "1883676087",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "String Session Pyrogram. Satu Asisten adalah Wajib.",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": "Heroku API KEY anda!",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
+        "description": "Nama Heroku Pertama-mu!",
         "value": "",
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "description": "ID Grup Log Anda, tambahkan bot Anda dan promosikan sebagai admin dengan hak penuh!. Gunakan hanya Grup. Tolong jangan gunakan ID Saluran.",
         "value": "",
         "required": true
       },
       "UPSTREAM_REPO": {
-        "description": "If you dont know this, Leave as it is",
+        "description": "Jika Anda tidak tahu ini, biarkan apa adanya!",
         "value": "https://github.com/damsyx/zetsumusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
+        "description": "Nama Branch Upstream!",
         "value": "master",
         "required": true
       }
