@@ -42,7 +42,7 @@
 - Masuk ke .env
 `nano .env`
 - Masukan semua data data bot music mu disitu
-- Setelah semua data dimasukan silahkan `ctrl + x` dan `y`
+- Setelah semua data dimasukan silahkan `ctrl + S` dan `X`
 - Buat Screen agar bot Aktif terus menerus 
 `screen -S botmusic`
 - Jalankan bot ketik :
