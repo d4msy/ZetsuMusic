@@ -130,8 +130,8 @@ PERINTAH BOT:
 /autoend [enable|disable] - Aktifkan Auto stream end setelah 3 menit jika tidak ada yang mendengarkan.
 
 📈**<u>STATS COMMANDS:</u>**
-/vcs - Periksa obrolan suara aktif di bot.
-/vcv - Periksa panggilan video aktif di bot.
+/activevc - Periksa obrolan suara aktif di bot.
+/activevd - Periksa panggilan video aktif di bot.
 /stats - Periksa Statistik Bot
 
 ⚠️**<u>BLACKLIST CHAT FUNCTION:</u>**
@@ -150,9 +150,9 @@ FUNGSI TERBLOKIR:
 /blockedusers - Periksa Daftar Pengguna yang diblokir
 
 FUNGSI GBAN:
-/mgban [Nama Pengguna atau Balas ke pengguna] - Gban pengguna dari obrolan yang dilayani bot dan hentikan dia menggunakan bot Anda.
-/mungban [Nama Pengguna atau Balas ke pengguna] - Hapus pengguna dari Daftar gbanned Bot dan izinkan dia menggunakan bot Anda
-/mgbannedusers - Periksa Daftar Pengguna Gbanned
+/gban [Nama Pengguna atau Balas ke pengguna] - Gban pengguna dari obrolan yang dilayani bot dan hentikan dia menggunakan bot Anda.
+/ungban [Nama Pengguna atau Balas ke pengguna] - Hapus pengguna dari Daftar gbanned Bot dan izinkan dia menggunakan bot Anda
+/gbannedusers - Periksa Daftar Pengguna Gbanned
 
 🎥**<u>FUNGSI VIDEOCALL:**
 /set_video_limit [Jumlah Obrolan] - Tetapkan Jumlah Obrolan maksimum yang diizinkan untuk Panggilan Video dalam satu waktu.  Default untuk 3 obrolan.
