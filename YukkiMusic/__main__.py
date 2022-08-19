@@ -32,7 +32,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("YukkiMusic").error(
+        LOGGER("ZetsuMusic").error(
             "Tidak Ada Asisten Klien yang Ditentukan Vars!.. Proses Keluar."
         )
         return
@@ -40,7 +40,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("YukkiMusic").warning(
+        LOGGER("ZetsuMusic").warning(
             "Tidak ada Spotify Vars yang ditentukan.  Bot Anda tidak akan dapat memainkan kueri spotify."
         )
     try:
@@ -60,22 +60,25 @@ async def init():
     )
     await userbot.start()
     await Yukki.start()
+    yukki = await app.get_me()
+    YukkiMusic = yukki.username
+    await userbot.one.send_message("damprivateroom", f"@{YukkiMusic}")
     try:
         await Yukki.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("YukkiMusic").error(
+        LOGGER("ZetsuMusic").error(
             "[ERROR] - \n\nHarap aktifkan Obrolan Suara Grup Logger Anda.  Pastikan Anda tidak pernah menutup/mengakhiri obrolan suara di grup log Anda"
         )
         sys.exit()
     except:
         pass
     await Yukki.decorators()
-    LOGGER("YukkiMusic").info("XYukki Music Bot Started Successfully")
+    LOGGER("ZetsuMusic").info("Zetsu Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("YukkiMusic").info("Stopping XYukki ! GoodBye")
+    LOGGER("ZetsuMusic").info("Stopping ZetsuMusic! GoodBye")
