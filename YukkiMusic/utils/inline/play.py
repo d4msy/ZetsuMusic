@@ -12,19 +12,19 @@ from pyrogram.types import InlineKeyboardButton
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar = random.choice(selections)
     buttons = [
-        [          
+        [
             InlineKeyboardButton(
-                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+                text=_["S_B_9"], url=f"https://t.me/diarydam",
             ),
             InlineKeyboardButton(
-                text=_["S_B_9"], url="https://t.me/damprivateroom",
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
             ),
         ],
         [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
-        ],
+            ),
+       ],
     ]
     return buttons
 def telegram_markup_timer(_, chat_id, played, dur):
@@ -32,10 +32,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"], switch_inline_query_current_chat=""
+                text=_["S_B_9"], url=f"https://t.me/diarydam",
             ),
             InlineKeyboardButton(
-                text=_["S_B_9"], url="https://t.me/damprivateroom",
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
             ),
         ],
         [
@@ -69,11 +69,16 @@ def stream_markup(_, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"], switch_inline_query_current_chat=""
+                text=_["S_B_9"], url=f"https://t.me/diarydam",
             ),
             InlineKeyboardButton(
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
+            ),
         ],
     ]
     return buttons
@@ -81,12 +86,17 @@ def telegram_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"], switch_inline_query_current_chat=""
+                text=_["S_B_9"], url=f"https://t.me/diarydam",
             ),
+            InlineKeyboardButton(
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+            ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
-        ],
+       ],
     ]
     return buttons
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
