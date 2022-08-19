@@ -14,7 +14,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"https://t.me/diarydam",
+                text=_["S_B_9"], url=f"https://t.me/damprivateroom",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],  switch_inline_query_current_chat=""
@@ -32,7 +32,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"https://t.me/diarydam",
+                text=_["S_B_9"], url=f"https://t.me/damprivateroom",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],  switch_inline_query_current_chat=""
@@ -69,7 +69,7 @@ def stream_markup(_, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"https://t.me/diarydam",
+                text=_["S_B_9"], url=f"https://t.me/damprivateroom",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],  switch_inline_query_current_chat=""
@@ -86,7 +86,7 @@ def telegram_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"https://t.me/diarydam",
+                text=_["S_B_9"], url=f"https://t.me/damprivateroom",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],  switch_inline_query_current_chat=""
