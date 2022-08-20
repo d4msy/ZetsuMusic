@@ -9,6 +9,7 @@
 import random
 from pyrogram.types import InlineKeyboardButton
 from config import SUPPORT_GROUP
+from config import SUPPORT_CHANNEL
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar = random.choice(selections)
@@ -18,10 +19,13 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["S_B_9"],  url=f"{SUPPORT_GROUP}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+                text=_["S_B_4"],  url=f"{SUPPORT_CHANNEL}", 
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+            ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
@@ -33,13 +37,16 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"{SUPPORT_GROUP}",
+                text=_["S_B_9"],  url=f"{SUPPORT_GROUP}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+                text=_["S_B_4"],  url=f"{SUPPORT_CHANNEL}", 
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+            ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
@@ -70,13 +77,16 @@ def stream_markup(_, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"{SUPPORT_GROUP}",
+                text=_["S_B_9"],  url=f"{SUPPORT_GROUP}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+                text=_["S_B_4"],  url=f"{SUPPORT_CHANNEL}", 
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+            ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
@@ -87,13 +97,16 @@ def telegram_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"{SUPPORT_GROUP}",
+                text=_["S_B_9"],  url=f"{SUPPORT_GROUP}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+                text=_["S_B_4"],  url=f"{SUPPORT_CHANNEL}", 
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=_["PL_B_3"],  switch_inline_query_current_chat=""
+            ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
