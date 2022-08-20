@@ -8,13 +8,14 @@
 # All rights reserved.
 import random
 from pyrogram.types import InlineKeyboardButton
+from config import SUPPORT_GROUP
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar = random.choice(selections)
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_9"], url=f"https://t.me/damprivateroom",
+                text=_["S_B_9"],  url=f"{SUPPORT_GROUP}",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],  switch_inline_query_current_chat=""
