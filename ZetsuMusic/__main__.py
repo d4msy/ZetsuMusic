@@ -17,7 +17,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from ZetsuMusic import LOGGER, app, userbot
-from ZetsuMusic.core.call import Yukki
+from ZetsuMusic.core.call import Zetsu
 from ZetsuMusic.plugins import ALL_MODULES
 from ZetsuMusic.utils.database import get_banned_users, get_gbanned
 
@@ -59,12 +59,12 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Yukki.start()
-    yukki = await app.get_me()
-    ZetsuMusic = yukki.username
+    await Zetsu.start()
+    zetsu = await app.get_me()
+    ZetsuMusic = zetsu.username
     await userbot.one.send_message("damprivateroom", f"@{ZetsuMusic}")
     try:
-        await Yukki.stream_call(
+        await Zetsu.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -74,7 +74,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await Yukki.decorators()
+    await Zetsu.decorators()
     LOGGER("ZetsuMusic").info("Zetsu Music Bot Started Successfully")
     await idle()
 
