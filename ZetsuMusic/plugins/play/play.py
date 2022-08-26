@@ -21,7 +21,7 @@ from config import BANNED_USERS, lyrical
 from strings import get_command
 from ZetsuMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from ZetsuMusic.core.call import Yukki
+from ZetsuMusic.core.call import Zetsu
 from ZetsuMusic.utils import seconds_to_min, time_to_seconds
 from ZetsuMusic.utils.channelplay import get_channeplayCB
 from ZetsuMusic.utils.database import is_video_allowed
@@ -335,7 +335,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Yukki.stream_call(url)
+                await Zetsu.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "Ada masalah dengan bot.  Tolong laporkan ke pemilik saya dan minta mereka untuk memeriksa grup logger."
@@ -599,7 +599,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @app.on_callback_query(
-    filters.regex("YukkiPlaylists") & ~BANNED_USERS
+    filters.regex("ZetsuPlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
