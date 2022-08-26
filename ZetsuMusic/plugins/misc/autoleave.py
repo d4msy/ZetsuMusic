@@ -12,7 +12,7 @@ from datetime import datetime
 
 import config
 from ZetsuMusic import app
-from ZetsuMusic.core.call import Yukki, autoend
+from ZetsuMusic.core.call import Zetsu, autoend
 from ZetsuMusic.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
@@ -68,7 +68,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Yukki.stop_stream(chat_id)
+                    await Zetsu.stop_stream(chat_id)
                 except:
                     continue
                 try:
