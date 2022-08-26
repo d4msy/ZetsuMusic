@@ -1,4 +1,4 @@
-# Yukki Music Bot Configs
+# Zetsu Music Bot Configs
 
 Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
@@ -11,11 +11,11 @@ Config vars are basically the variables which configure or modify bot to functio
 1. `API_ID` : Get it from my.telegram.org 
 2. `API_HASH`  : Get it from my.telegram.org 
 3. `BOT_TOKEN` : Get it from [@Botfather](http://t.me/BotFather) in Telegram
-4. `MONGO_DB_URI` : Get mongo db [from here.](https://notreallyshikhar.gitbook.io/ZetsuMusicbot/deployment/mongodb)
+4. `MONGO_DB_URI` : Get mongo db from web
 5. `LOG_GROUP_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
 6. `MUSIC_BOT_NAME` : A name for your Music bot.
 7. `OWNER_ID` : Your Owner ID for managing your bot.
-8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
+8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [@ZetsuStringBot](http://t.me/ZetsuStringBot) in Telegram.
 
 
 ## Non-Mandatory Vars
@@ -70,15 +70,14 @@ Config vars are basically the variables which configure or modify bot to functio
 - To work some Heroku compatible modules, this var value required to Access your account to use `get_log`, `usage`, `update` etc etc commands.
 - You can fill this var using your API key or Authorization token.
 
-### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/ZetsuMusicbot/config-vars/heroku-vars)
-
+### How to get these?
 1. `HEROKU_API_KEY` : Get it from http://dashboard.heroku.com/account 
 2. `HEROKU_APP_NAME` : You have to Enter the app name which you gave to identify your Music Bot in Heroku. 
 
 
 ## Custom Repo Vars
 
-- If you plan to use Yukki Music Bot with your own customized or modified code.
+- If you plan to use Zetsu Music Bot with your own customized or modified code.
 
 1. `UPSTREAM_REPO` : Your Upstream Repo URL or Forked Repo.
 2. `UPSTREAM_BRANCH` : Default Branch of your Upstream Repo URL or Forked Repo. 
@@ -89,8 +88,8 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Images/Thumbnail Vars
 
-- You can change images which are used in Yukki Music Bot.
-- You can generate telegaph links from [@YukkiTelegraphBot](http://t.me/YukkiTelegraphBot) and use it here.
+- You can change images which are used in Zetsu Music Bot.
+- You can generate telegaph links from [@zetsuXrobot](http://t.me/zetsuXrobot) and use it here.
 
 1. `START_IMG_URL` : Image which comes on /start command in private messages of bot.
 2. `PING_IMG_URL` : Image which comes on /ping command of bot.
@@ -110,7 +109,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 - You can use upto 5 Assistant Clients ( allowing your bot to atleast work in 2000-2500 chats at a time )
 
-1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
+1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string from [@ZetsuStringBot](http://t.me/ZetsuStringBot) in Telegram.
+2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string from [@ZetsuStringBot](http://t.me/ZetsuStringBot) in Telegram.
+3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string from [@ZetsuStringBot](http://t.me/ZetsuStringBot) in Telegram.
+4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string from [@ZetsuStringBot](http://t.me/ZetsuStringBot) in Telegram.
