@@ -13,7 +13,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from ZetsuMusic import YouTube, app
-from ZetsuMusic.core.call import Yukki
+from ZetsuMusic.core.call import Zetsu
 from ZetsuMusic.misc import db
 from ZetsuMusic.utils import AdminRightsCheck, seconds_to_min
 
@@ -70,7 +70,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await Yukki.seek_stream(
+        await Zetsu.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
