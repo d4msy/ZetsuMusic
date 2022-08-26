@@ -7,7 +7,7 @@
 #
 # All rights reserved.
 
-from ZetsuMusic.core.bot import YukkiBot
+from ZetsuMusic.core.bot import ZetsuBot
 from ZetsuMusic.core.dir import dirr
 from ZetsuMusic.core.git import git
 from ZetsuMusic.core.userbot import Userbot
@@ -31,7 +31,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = YukkiBot()
+app = ZetsuBot()
 
 # Assistant Client
 userbot = Userbot()
