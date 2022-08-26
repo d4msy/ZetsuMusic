@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/TeamYukki/ZetsuMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/ZetsuMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -13,10 +13,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database.memorydatabase import get_video_limit
-from YukkiMusic.utils.formatters import convert_bytes
+from ZetsuMusic import app
+from ZetsuMusic.misc import SUDOERS
+from ZetsuMusic.utils.database.memorydatabase import get_video_limit
+from ZetsuMusic.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 

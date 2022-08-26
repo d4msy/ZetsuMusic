@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/TeamYukki/ZetsuMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/ZetsuMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -16,10 +16,10 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from YukkiMusic import LOGGER, app, userbot
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.plugins import ALL_MODULES
-from YukkiMusic.utils.database import get_banned_users, get_gbanned
+from ZetsuMusic import LOGGER, app, userbot
+from ZetsuMusic.core.call import Yukki
+from ZetsuMusic.plugins import ALL_MODULES
+from ZetsuMusic.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -54,15 +54,15 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("YukkiMusic.plugins" + all_module)
-    LOGGER("Yukkimusic.plugins").info(
+        importlib.import_module("ZetsuMusic.plugins" + all_module)
+    LOGGER("ZetsuMusic.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
     await Yukki.start()
     yukki = await app.get_me()
-    YukkiMusic = yukki.username
-    await userbot.one.send_message("damprivateroom", f"@{YukkiMusic}")
+    ZetsuMusic = yukki.username
+    await userbot.one.send_message("damprivateroom", f"@{ZetsuMusic}")
     try:
         await Yukki.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"

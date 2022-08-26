@@ -34,6 +34,6 @@ assignees: 'TeamYukki'
 
 ## Checklist
 >  Go over all the following points, and put an `x` in all the boxes that apply.
-- [ ] I searched the [current issues](https://github.com/TeamYukki/YukkiMusicBot/issues) and the issue is not known.
+- [ ] I searched the [current issues](https://github.com/TeamYukki/ZetsuMusicBot/issues) and the issue is not known.
 - [ ] I searched on Google, Steam, YouTube, Reddit and there's no fix.
 - [ ] I am mostly sure that the problem is related to the project and isn't my fault.
