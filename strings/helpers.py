@@ -78,11 +78,11 @@ HELP_3 = """✅<u>**Bot Commands:**</u>
 
 HELP_4 = """✅<u>**Extra  Commands:**</u>
 /start - Mulai Bot Musik.
-/mhelp - Dapatkan Menu Helper Perintah dengan penjelasan rinci tentang perintah.
-/mping- Ping Bot dan periksa statistik Ram, Cpu, dll dari Bot.
+/help - Dapatkan Menu Helper Perintah dengan penjelasan rinci tentang perintah.
+/ping- Ping Bot dan periksa statistik Ram, Cpu, dll dari Bot.
 
 ✅<u>**Group Settings:**</u>
-/msettings - Dapatkan pengaturan grup lengkap dengan tombol sebaris
+/settings - Dapatkan pengaturan grup lengkap dengan tombol sebaris
 
 🔗 **Options in Settings:**
 
@@ -164,7 +164,7 @@ FUNGSI BOT SWASTA:
 /authorized - Periksa semua obrolan bot Anda yang diizinkan.
 
 FUNGSI PENYIARAN:
-/gcast [Pesan atau Balas Pesan] - Menyiarkan pesan apa pun ke Obrolan yang Dilayani Bot.
+/broadcast [Pesan atau Balas Pesan] - Menyiarkan pesan apa pun ke Obrolan yang Dilayani Bot.
 
 <u>opsi untuk siaran:
 -pin : Ini akan menyematkan pesan Anda
@@ -173,6 +173,6 @@ FUNGSI PENYIARAN:
 -assistant : Ini akan menyiarkan pesan Anda dari akun asisten bot Anda.
 -nobot: Ini akan memaksa bot Anda untuk tidak menyiarkan pesan
 
-Contoh: `/gcast -user -assistant -pin Hello Testing`
+Contoh: `/broadcast -user -assistant -pin Hello Testing`
 
 """
