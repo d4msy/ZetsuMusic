@@ -25,7 +25,7 @@ from ZetsuMusic.utils.decorators.language import language, languageCB
 from ZetsuMusic.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from ZetsuMusic.utils.pastebin import Yukkibin
+from ZetsuMusic.utils.pastebin import Zetsubin
 from ZetsuMusic.utils.stream.stream import stream
 
 # Command
@@ -55,7 +55,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await Yukkibin(msg)
+    link = await Zetsubin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
