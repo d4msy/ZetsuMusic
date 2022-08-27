@@ -30,7 +30,7 @@ from ZetsuMusic.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
 from ZetsuMusic.utils.decorators.language import language
-from ZetsuMusic.utils.pastebin import Yukkibin
+from ZetsuMusic.utils.pastebin import Zetsubin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -69,7 +69,7 @@ async def log_(client, message, _):
                     NUMB = 100
                 for x in lines[-NUMB:]:
                     data += x
-                link = await Yukkibin(data)
+                link = await Zetsubin(data)
                 return await message.reply_text(link)
             else:
                 return await message.reply_text(_["heroku_2"])
@@ -265,7 +265,7 @@ async def update_(client, message, _):
     _update_response_ = "<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
-        url = await Yukkibin(updates)
+        url = await Zetsubin(updates)
         nrs = await response.edit(
             f"<b>Pembaruan baru tersedia untuk Bot!\n\n➣ Mendorong Pembaruan Sekarang\n\nPembaruan:\n\n[Klik Di Sini untuk memeriksa Pembaruan]({url})"
         )
