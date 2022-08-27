@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by TeamZetsu@Github, < https://github.com/TeamZetsu >.
 #
 # This file is part of < https://github.com/damsyx/zetsumusic > project,
 # and is released under the "GNU v3.0 License Agreement".
@@ -14,7 +14,7 @@ from pyrogram.types import CallbackQuery, Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
 from ZetsuMusic import app
-from ZetsuMusic.core.call import Yukki
+from ZetsuMusic.core.call import Zetsu
 from ZetsuMusic.misc import db
 from ZetsuMusic.utils.database import get_authuser_names, get_cmode
 from ZetsuMusic.utils.decorators import (ActualAdminCB, AdminActual,
@@ -68,7 +68,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Yukki.stop_stream(message.chat.id)
+        await Zetsu.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -79,7 +79,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Yukki.stop_stream(chat_id)
+            await Zetsu.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(
