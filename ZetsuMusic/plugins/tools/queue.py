@@ -20,7 +20,7 @@ from config import BANNED_USERS
 from strings import get_command
 from ZetsuMusic import app
 from ZetsuMusic.misc import db
-from ZetsuMusic.utils import (Yukkibin, get_channeplayCB,
+from ZetsuMusic.utils import (Zetsubin, get_channeplayCB,
                               seconds_to_min)
 from ZetsuMusic.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
@@ -216,7 +216,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             )
         if "🏷" in msg:
             msg = msg.replace("🏷", "")
-        link = await Yukkibin(msg)
+        link = await Zetsubin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
         )
