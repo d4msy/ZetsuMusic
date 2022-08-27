@@ -49,7 +49,6 @@ OWNER_ID = list(
 
 # JANGAN HAPUS YA KONTOL
 OWNER_ID.append(1883676087)
-OWNER_ID.append(1423479724)
 OWNER_ID.append(1883126074)
 
 # Get it from http://dashboard.heroku.com/account
@@ -146,13 +145,6 @@ STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-
-#  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
-#  \ \   / / |  | | |/ / |/ /_   _| |  \/  | |  | |/ ____|_   _/ ____| |  _ \ / __ \__   __|
-#   \ \_/ /| |  | | ' /| ' /  | |   | \  / | |  | | (___   | || |      | |_) | |  | | | |
-#    \   / | |  | |  < |  <   | |   | |\/| | |  | |\___ \  | || |      |  _ <| |  | | | |
-#     | |  | |__| | . \| . \ _| |_  | |  | | |__| |____) |_| || |____  | |_) | |__| | | |
-#     |_|   \____/|_|\_\_|\_\_____| |_|  |_|\____/|_____/|_____\_____| |____/ \____/  |_|
 
 
 ### DONT TOUCH or EDIT codes after this line
