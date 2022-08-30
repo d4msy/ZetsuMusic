@@ -70,7 +70,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "Jika Anda tidak tahu ini, biarkan apa adanya!",
-        "value": "https://github.com/damsyx/zetsumusic",
+        "value": "https://github.com/damsyx/ZetsuMusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
