@@ -1,6 +1,6 @@
 {
     "name": "ZetsuMusic",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "description": "Streaming Panggilan Grup Telegram bot dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls. Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.",
     "logo": "https://telegra.ph/file/b7377dbb15379573b68dd.jpg",
     "keywords": [
     "python3",
@@ -34,7 +34,7 @@
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Dapatkan url mongodb dari https://cloud.mongodb.com . Anda dapat mengosongkannya jika Anda mau, bot akan menggunakan database Yukki untuk Anda.",
+        "description": "Dapatkan url mongodb dari https://cloud.mongodb.com . Anda dapat mengosongkannya jika Anda mau, bot akan menggunakan database Zetsu untuk Anda.",
         "value": "",
         "required": true
       },
@@ -49,7 +49,7 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "String Session Pyrogram. Satu Asisten adalah Wajib.",
+        "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/damprivateroom » Lalu ketik /get string.",
         "value": "",
         "required": true
       },
