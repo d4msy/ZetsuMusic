@@ -1,4 +1,4 @@
-<img src="https://telegra.ph/file/6f85dc68c2c347ca763e3.jpg" align="center" width="350" height="200"/>
+<img src="https://telegra.ph/file/6f85dc68c2c347ca763e3.jpg" align="center" width="300" height="200"/>
 
 # Zetsu Music Bot <img src="https://img.shields.io/github/v/release/damsyx/ZetsuMusic?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
