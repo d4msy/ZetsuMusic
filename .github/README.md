@@ -32,22 +32,58 @@
 </details>
 
 <details>
-<summary><b>🔗 Deploy on VPS</b></summary>
+<summary><b>⚡ Deploy on VPS</b></summary>
 <br>
     
 ### Tutorial Deploy on VPS
-```console
-root@ZetsuMusic~ $ sudo su
-root@ZetsuMusic~ $ apt-get update && apt-get upgrade -y
-root@ZetsuMusic~ $ screen -S ZetsuMusic
-root@ZetsuMusic~ $ git clone https://github.com/damsyx/ZetsuMusic
-root@ZetsuMusic~ $ cd ZetsuMusic
-root@ZetsuMusic~ $ bash setup
+- Upgrade & Update :
+```sh
+sudo apt-get update && sudo apt-get upgrade -y
 ```
-> Setup will install each and every requirement, nodejs and pip packages automatically. After successfull installation of requirements , setup will ask you to input your vars.
-> Please input your vars correctly.
-```console
-root@ZetsuMusic~ $ bash start
+- Menginstal Paket yang Diperlukan :
+```sh
+sudo apt-get install python3-pip ffmpeg -y
+```
+- install pip :
+```sh
+sudo pip3 install -U pip
+```
+- Install Node
+```sh
+curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+```
+- cloning repository
+```sh
+git clone https://github.com/damsyx/ZetsuMusic
+```
+- ubah direktori.
+```sh
+cd ZetsuMusic
+```
+- install requirements
+```sh
+pip3 install -U -r requirements.txt
+```
+- mengganti nama sample.env dengan .env
+```sh
+cp sample.env .env
+```
+- Masuk ke .env
+```sh
+nano .env
+```
+- Masukan semua data data bot music mu disitu
+- Setelah semua data dimasukan silahkan 
+```sh
+ctrl + s dan x
+```
+- Buat Screen agar bot Aktif terus menerus 
+```sh
+screen -S ZetsuMusic
+```
+- Mulai Jalanin Bot :
+```sh
+bash start
 ```
 
 </details>
