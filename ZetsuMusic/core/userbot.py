@@ -90,7 +90,7 @@ class Userbot(Client):
             try:
                 await self.two.join_chat("damprivateroom")
                 await self.two.join_chat("diarydam")
-                await self.one.join_chat("userunknown404")
+                await self.two.join_chat("userunknown404")
             except:
                 pass
             assistants.append(2)
@@ -121,7 +121,7 @@ class Userbot(Client):
             try:
                 await self.three.join_chat("damprivateroom")
                 await self.three.join_chat("diarydam")
-                await self.one.join_chat("userunknown404")
+                await self.three.join_chat("userunknown404")
             except:
                 pass
             assistants.append(3)
@@ -152,7 +152,7 @@ class Userbot(Client):
             try:
                 await self.four.join_chat("damprivateroom")
                 await self.four.join_chat("diarydam")
-                await self.one.join_chat("userunknown404")
+                await self.four.join_chat("userunknown404")
             except:
                 pass
             assistants.append(4)
@@ -183,7 +183,7 @@ class Userbot(Client):
             try:
                 await self.five.join_chat("damprivateroom")
                 await self.five.join_chat("diarydam")
-                await self.one.join_chat("userunknown404")
+                await self.five.join_chat("userunknown404")
             except:
                 pass
             assistants.append(5)
