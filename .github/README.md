@@ -2,7 +2,7 @@
 
 # Zetsu Music Bot <img src="https://img.shields.io/github/v/release/damsyx/ZetsuMusic?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
-[Zetsu Music Bot](https://github.com/damsyx/ZetsuMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
+[Zetsu Music Bot](https://github.com/d4msy/ZetsuMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
 
 * Youtube, Soundcloud, Apple Music, Spotify, Resso, Live Streams and Telegram Audios & Videos support.
 * Written from scratch, making it stable and less crashes with attractive thumbnails.
@@ -25,7 +25,7 @@
 <br>
 
 <h4>Click the button below to deploy Zetsu on Heroku!</h4>    
-<a href="https://heroku.com/deploy?template=https://github.com/damsyx/ZetsuMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+<a href="https://heroku.com/deploy?template=https://github.com/d4msy/ZetsuMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
 
 <h4>Click the button below to deploy Zetsu on bot Telegram!</h4>
 <a href="https://telegram.dog/XTZ_HerokuBot?start=ZGFtc3l4L1pldHN1TXVzaWMgbWFzdGVy"><img src="https://img.shields.io/badge/Deploy%20To%20Bot%20Telegram-blue?style=for-the-badge&logo=telegram" width="200""/></a>
@@ -50,11 +50,11 @@ sudo pip3 install -U pip
 ```
 - Install Node
 ```sh
-curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+curl -fssL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
 ```
 - cloning repository
 ```sh
-git clone https://github.com/damsyx/ZetsuMusic
+git clone https://github.com/d4msy/ZetsuMusic
 ```
 - ubah direktori.
 ```sh
@@ -90,7 +90,7 @@ bash start
 
 ## 🗂 License
 
-This project is licensed under the **GNU General Public License v3**. All designs were created by [@xflsdam](https://github.com/damsyx) .
+This project is licensed under the **GNU General Public License v3**. All designs were created by [@d4msy](https://github.com/d4msy) .
 
 See [LICENSE](../LICENSE) for more information.
 
