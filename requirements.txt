@@ -7,10 +7,10 @@ gitpython
 hachoir
 heroku3
 lyricsgenius
-motor
+motor==3.00
 pillow
 psutil
-py-tgcalls==0.9.1
+py-tgcalls==0.9.7
 pykeyboard
 pyrogram==1.4.16
 python-dotenv
@@ -21,4 +21,4 @@ spotipy
 tgcrypto
 youtube-search
 youtube-search-python
-yt-dlp
+git+https://github.com/yt-dlp/yt-dlp.git
