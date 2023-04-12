@@ -62,7 +62,7 @@ async def init():
     await Zetsu.start()
     zetsu = await app.get_me()
     ZetsuMusic = zetsu.username
-    await userbot.one.send_message("damprivateroom", f"@{ZetsuMusic}")
+    await userbot.one.send_message("himikosupportchat", f"@{ZetsuMusic}")
     try:
         await Zetsu.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
